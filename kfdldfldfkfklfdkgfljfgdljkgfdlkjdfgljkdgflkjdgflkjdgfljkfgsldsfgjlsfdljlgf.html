@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТзОВ "ВКП НОВІТЕХ"</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            position: relative;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #444;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            padding: 40px 0;
+        }
+        .content {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.8em;
+            position: relative;
+        }
+        footer .footer-text {
+            margin-top: 10px;
+        }
+        footer #time {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            font-size: 1.2em;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        form button {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #555;
+        }
+        .unit-converter {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .unit-converter input, .unit-converter select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .unit-converter button {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .unit-converter button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ТзОВ "ВКП НОВІТЕХ"</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#services">Наші послуги</a></li>
+                    <li><a href="#news">Новини</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                    <li><a href="#converter">Перетворювач величин</a></li>
+                </ul>
+            </nav>
+            <div id="time"></div>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container content">
+            <h2>Ласкаво просимо на офіційний сайт ТзОВ "ВКП НОВІТЕХ"</h2>
+            <p>Ми спеціалізуємося на наданні високоякісних електричних послуг для промислових і комерційних об'єктів.</p>
+            <a href="#about" class="btn">Дізнатися більше</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container content">
+            <h2>Про нас</h2>
+            <p>ТзОВ "ВКП НОВІТЕХ" - це компанія з багаторічним досвідом у сфері електричних робіт. Ми забезпечуємо комплексні послуги з установки та обслуговування електричних систем. Наша команда складається з висококваліфікованих спеціалістів, які використовують сучасні технології для досягнення найкращих результатів.</p>
+            <ul>
+                <li>Професіоналізм</li>
+                <li>Сучасні технології</li>
+                <li>Гарантія якості</li>
+                <li>Оперативність виконання</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container content">
+            <h2>Наші послуги</h2>
+            <ul>
+                <li><strong>Установка електричних систем:</strong> Ми спеціалізуємося на якісній установці електричних систем, що забезпечує безпеку та надійність.</li>
+                <li><strong>Обслуговування і ремонт:</strong> Наші спеціалісти оперативно вирішать будь-які проблеми з електричними системами, забезпечуючи їхню безперебійну роботу.</li>
+                <li><strong>Консультації:</strong> Ми надаємо професійні консультації з питань енергозбереження та електричних систем, щоб допомогти вам зробити оптимальний вибір.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="news">
+        <div class="container content">
+            <h2>Новини</h2>
+            <article>
+                <h3>Оновлення в нашій компанії</h3>
+                <p>Ми раді оголосити про нові послуги, які ми тепер пропонуємо! Тепер ми також надаємо консультації з енергозбереження...</p>
+                <p><a href="#">Читати далі</a></p>
+            </article>
+            <article>
+                <h3>Наші досягнення за рік</h3>
+                <p>За минулий рік наша компанія досягла значних успіхів у галузі електричних робіт, отримавши нові сертифікати та нагороди...</p>
+                <p><a href="#">Читати далі</a></p>
+            </article>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container content">
+            <h2>Часто задавані питання</h2>
+            <dl>
+                <dt>Які послуги ви пропонуєте?</dt>
+                <dd>Ми пропонуємо установку електричних систем, обслуговування та ремонт, а також консультації з енергозбереження.</dd>
+                
+                <dt>Яка ваша гарантія на послуги?</dt>
+                <dd>Ми надаємо гарантію на всі виконані роботи. Тривалість гарантії залежить від типу послуги.</dd>
+                
+                <dt>Чи можу я отримати безкоштовну консультацію?</dt>
+                <dd>Так, ми пропонуємо безкоштовні консультації для нових клієнтів.</dd>
+            </dl>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container content">
+            <h2>Контакти</h2>
+            <p>Зв'яжіться з нами, щоб дізнатися більше про наші послуги або отримати консультацію.</p>
+            <address>
+                <p><strong>Адреса:</strong> Немає</p>
+                <p><strong>Телефон:</strong> +380676735369</p>
+                <p><strong>Електронна пошта:</strong> mblag@ukr.net</p>
+            </address>
+            <form action="#" method="post">
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Електронна пошта</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Повідомлення</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="converter">
+        <div class="container content unit-converter">
+            <h2>Перетворювач величин</h2>
+            <form id="unitConverter">
+                <label for="value">Введіть значення:</label>
+                <input type="number" id="value" name="value" step="any" required>
+
+                <label for="unitFrom">Перетворити з:</label>
+                <select id="unitFrom">
+                    <option value="m">Метри (м)</option>
+                    <option value="cm">Сантиметри (см)</option>
+                    <option value="km">Кілометри (км)</option>
+                    <option value="mm">Міліметри (мм)</option>
+                    <option value="in">Дюйми (in)</option>
+                </select>
+
+                <label for="unitTo">Перетворити в:</label>
+                <select id="unitTo">
+                    <option value="m">Метри (м)</option>
+                    <option value="cm">Сантиметри (см)</option>
+                    <option value="km">Кілометри (км)</option>
+                    <option value="mm">Міліметри (мм)</option>
+                    <option value="in">Дюйми (in)</option>
+                </select>
+
+                <button type="button" onclick="convertUnits()">Перетворити</button>
+            </form>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-text">
+            <p>&copy; 2024 ТзОВ "ВКП НОВІТЕХ". Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Функція для оновлення часу у футері
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('time').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        // Оновлювати час кожну секунду
+        setInterval(updateTime, 1000);
+
+        // Встановити початковий час
+        updateTime();
+
+        // Функція для перетворення одиниць
+        function convertUnits() {
+            const value = parseFloat(document.getElementById('value').value);
+            const unitFrom = document.getElementById('unitFrom').value;
+            const unitTo = document.getElementById('unitTo').value;
+
+            let result;
+
+            // Перетворення величин
+            const conversionRates = {
+                'm': { 'cm': 100, 'km': 0.001, 'mm': 1000, 'in': 39.3701 },
+                'cm': { 'm': 0.01, 'km': 0.00001, 'mm': 10, 'in': 0.393701 },
+                'km': { 'm': 1000, 'cm': 100000, 'mm': 1000000, 'in': 39370.1 },
+                'mm': { 'm': 0.001, 'cm': 0.1, 'km': 0.000001, 'in': 0.0393701 },
+                'in': { 'm': 0.0254, 'cm': 2.54, 'km': 0.0000254, 'mm': 25.4 }
+            };
+
+            if (unitFrom === unitTo) {
+                result = value;
+            } else {
+                result = value * conversionRates[unitFrom][unitTo];
+            }
+
+            document.getElementById('result').textContent = `Результат: ${result} ${unitTo === 'm' ? 'м' : unitTo === 'cm' ? 'см' : unitTo === 'km' ? 'км' : unitTo === 'mm' ? 'мм' : 'in'}`;
+        }
+    </script>
+</body>
+</html>
